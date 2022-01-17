@@ -32,26 +32,16 @@ do {
 } while(saludo != 4)
 
 //EJERCICIO 2 CON FOR
-const numero1 = 4
-const numero2 = 6
+
 
 let numero = parseInt(prompt("Ingrese numero"))
-for (i = 1; i <= 60; i++) {
+for (i = 1; i <= 100; i++) {
 
     let producto1 = i % numero
     
     if(producto1 == 0) {
-        alert(i + " es multiplo de 4")
-    }
-
-    
-    let producto2 = i % numero
-    
-    if(producto2 == 0) {
-        alert(i + " es multiplo de 6")
+        console.log(i + " es multiplo de " + numero)
     }
 }
-
-
 
 
