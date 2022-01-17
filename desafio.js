@@ -35,13 +35,27 @@ do {
 
 
 let numero = parseInt(prompt("Ingrese numero"))
-for (i = 1; i <= 100; i++) {
 
-    let producto1 = i % numero
-    
-    if(producto1 == 0) {
-        console.log(i + " es multiplo de " + numero)
+
+if(isNaN(numero)) {
+    alert("no es un numero")
+} else {
+    for (i = 1; i <= 100; i++) {
+
+        let producto1 = i % numero
+        
+        if(producto1 == 0) {
+            console.log(i + " es multiplo de " + numero)
+        }
+        if(numero > 10) {
+            alert("se interrumpio el ciclo")
+            break
+        }
     }
 }
+
+//EJERCICIO 3 WHILE
+
+
 
 
